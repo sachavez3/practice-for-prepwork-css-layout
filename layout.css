@@ -1,0 +1,63 @@
+.container {
+    width: 100%
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+body {
+    text-align: center;
+    font-size: smaller;
+}
+
+select, input[type="text"]{
+    width: 190px;
+    box-sizing: border-box;
+  }
+
+select, input[type="email"]{
+    width: 190px;
+    box-sizing: border-box;
+  }
+
+select, input[type="role"], input[type="date"] {
+    width: 94px;
+    box-sizing: border-box;
+  }
+
+
+
+  legend {
+    border: 1px solid black;
+    text-transform: lowercase;
+    margin-left: -135px;
+    padding:3px 5px 3px 5px;
+}
+
+/*code to hide the calendar icon below*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-weight: lighter;
+    outline: none;
+    border: 1px solid black;
+    font-size: smaller;
+    text-align: center;
+}
+
+div {
+    margin: 5px;
+    width: 580px;
+    justify-content: center;
+}
+
+label {vertical-align:top}
+textarea{ height:3em; width:190px}

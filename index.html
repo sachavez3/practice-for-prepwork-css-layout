@@ -7,63 +7,71 @@
         <form action="/form-handling-url" method="post">
             <fieldset>
             <legend>Add user</legend>
-        
+
+            <div class="container" id="home">
             <div>
-                <label for="firstName">First name</label>
+                <label for="firstName">First Name:</label><br>
                 <input type="text" id="firstName" name="first_name">
             </div>
-        
+
             <div>
-                <label for="lastName">Last name</label>
+                <label for="lastName">Last Name:</label><br>
                 <input type="text" id="lastName" name="last_name">
             </div>
-        
+
             <div>
-                <label for="email">Email</label>
+                <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email_address">
             </div>
-        
+
             <div>
-                <label for="role">Status</label>
+                <label for="role">Status:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>
+                    <label for="date">Date:</label>
+                </span><br>
+
                 <select id="role" name="user_role_name">
                 <option value="student">Student</option>
                 <option value="instructor">Instructor</option>
                 <option value="guest">Guest</option>
                 </select>
+
+                <span>
+                    <input type="date" id="date" name="date">
+            </span>
             </div>
-            
+
+
+
             <div>
                 <p>Choose your favorite Web language:</p>
                 <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
+                <label for="html">HTML</label>
                 <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
+                <label for="css">CSS</label>
                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
                 <label for="javascript">JavaScript</label>
             </div>
 
             <div>
-                <label for="comments">Comments</label>
+                <label for="comments">Comments:</label><br>
                 <textarea id="comments" name="comments"></textarea>
             </div>
 
-            <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
-            </div>
+
 
             <div>
                 <input type="checkbox" id="signup" name="signup" value="Signup">
-                <label for="signup">Sign up for news letter</label><br>
+                <label for="signup">sign up for news</label>
                 <input type="checkbox" id="terms" name="terms" value="Terms">
-                <label for="terms"> Agree to terms and conditions</label>
+                <label for="terms">agree to terms</label>
             </div>
-        
+
             <div>
                 <button type="submit">Submit</button>
             </div>
-        
+
             </fieldset>
         </form>
+        </div>
     </body>
 </html>
